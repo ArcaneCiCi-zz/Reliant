@@ -12,4 +12,3 @@ A Windows batch file that aids you in your experience with a Windows Machine.
 - Windows 8
 - Windows 8.1
 - Windows 10
-
