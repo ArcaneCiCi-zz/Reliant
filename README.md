@@ -1,5 +1,6 @@
 # Reliant
-A windows batch file that aids you in your experience with a Windows Machine.
+-----------------------------------------------------------------------------
+A Windows batch file that aids you in your experience with a Windows Machine.
 -----------------------------------------------------------------------------
 
 *Reliant 1.0*
