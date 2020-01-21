@@ -3,7 +3,7 @@
 A Windows batch file that aids you in your experience with a Windows Machine.
 -----------------------------------------------------------------------------
 
-*Reliant 1.0*
+*Reliant 1.1*
 
 **Supported Operating systems:**
 
