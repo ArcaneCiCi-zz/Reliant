@@ -1,6 +1,6 @@
 # Reliant
 
-https://imgur.com/usjVOuy
+<p><img src="https://imgur.com/usjVOuy" caption="false" /></p>
 
 ----------------------------------------------------------------------------------------
 A Windows batch file multi-tool that aids you in your experience with a Windows Machine.
