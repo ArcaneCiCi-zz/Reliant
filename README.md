@@ -1,6 +1,6 @@
 # Reliant
 
-<p> | <img src="https://i.imgur.com/PMTLEJT.png" alt="Logo" width="42" height="42" align="middle"> | </p>
+<img src="https://i.imgur.com/PMTLEJT.png" alt="Logo" width="100" height="100" align="middle">
 
 ----------------------------------------------------------------------------------------
 A Windows batch file multi-tool that aids you in your experience with a Windows Machine.
