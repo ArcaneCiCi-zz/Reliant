@@ -6,7 +6,7 @@ A Windows batch file multi-tool that aids you in your experience with a Windows 
 
 *Reliant 1.2*
 
-Installation: Go to releases and download the latest version, then drag the folder out of the .zip.
+Head to releases to get started.
 
 **Supported Operating systems:**
 
