@@ -4,7 +4,7 @@
 A Windows batch file multi-tool that aids you in your experience with a Windows Machine.
 ----------------------------------------------------------------------------------------
 
-*Reliant 1.2*
+*Latest version: Reliant 1.3*
 
 Head to releases to get started.
 
