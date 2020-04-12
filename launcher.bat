@@ -1,5 +1,5 @@
 @echo off
-set relversion=1.9
+set relversion=ad66d04
 goto launch_1
 :launch_1
     title Reliant Launcher 1.0.9
