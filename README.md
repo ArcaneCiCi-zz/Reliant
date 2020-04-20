@@ -1,15 +1,19 @@
 # Reliant
 
-<h2 align="center">A Windows batch file multi-tool that aids you in your experience with a Windows Machine.</h2>
+**A Windows batch file multi-tool that aids you in your experience with a Windows Machine.**
 
-<h2 align="center"><i>Latest version: Reliant 1.9</i></h2>
+*Latest version: Reliant 1.9*
 
-<h2 align="center">Head to releases to get started.</h2>
+Head to releases to get started.
 
-<h2 align="center"Supported Operating systems</h2>
+***Supported Operating systems***
 
-- Windows 10 (Recommended)
-- Windows 8.1
-- Windows 8
-- Windows 7
-- Windows Vista
+**- Windows 10 (Recommended)**
+<br>
+**- Windows 8.1**
+<br>
+**- Windows 8**
+<br>
+**- Windows 7**
+<br>
+**- Windows Vista**
