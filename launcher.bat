@@ -1,21 +1,19 @@
 @echo off
-set relversion=ad66d04
-goto launch_1
+set relversion=main
 :launch_1
-    title Reliant Launcher 1.0.9
+    title Reliant Launcher 1.0.11
         color a
             echo.
             echo [%time%]: Running file check..
-                if exist assets\reliant-%relversion%.bat goto :launch_2
-                if not exist assets\reliant-%relversion%.bat goto :failedlaunch
+                if exist main\reliant-%relversion%.bat goto :launch_2
+                if not exist main\reliant-%relversion%.bat goto :failedlaunch
 
 :launch_2
     timeout /t 1 /nobreak >nul
         cls
             echo.
             echo [%time%]: Launching Reliant %relversion%...
-                    timeout /t 1 /nobreak >nul
-                    start /max assets\reliant-%relversion%.bat
+                    start /max main\reliant-%relversion%.bat
                     exit
 
 :failedlaunch
