@@ -17,3 +17,5 @@ Head to releases to get started.
 **- Windows 7**
 <br>
 **- Windows Vista**
+<br>
+**- Windows XP**
