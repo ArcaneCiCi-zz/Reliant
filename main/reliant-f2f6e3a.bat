@@ -90,7 +90,7 @@ echo // START OF MENUBOOK PAGE // >nul
                     echo.
                     echo.
                     echo                 Today's date is %date%
-                    echo                 The current time is%time%
+                    echo                 The current time is %time%
                     echo.
                     echo                     [ArcaneCiCi ~ %gitcommit%]
                     echo                     Reliant Menu Booklet
@@ -495,6 +495,7 @@ goto mainmenu
             echo.
                 set /p sum=
                 set /a ans=%sum%
+                :: Suggestion check if its a valid number lmfao
                     echo.
                     echo = %ans%
                     echo --------------------------------------------------------------
