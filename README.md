@@ -1,5 +1,9 @@
 # Reliant
 
+<h2>Update: Reliant is getting a full rework, and being made in Java.</h2>
+
+----------------------------------------------------------------------------------------------
+
 **A Windows batch file multi-tool that aids you in your experience with a Windows Machine.**
 
 *Latest version: Reliant 1.9*
@@ -19,3 +23,4 @@ Head to releases to get started.
 **- Windows Vista**
 <br>
 **- Windows XP**
+----------------------------------------------------------------------------------------------
