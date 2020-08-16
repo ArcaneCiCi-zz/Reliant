@@ -1,6 +1,6 @@
 # Reliant
 
-<h2>Update: Reliant is getting a full rework, and being made in Java. Please be patient while we rework Reliant.</h2>
+<h2>Update: Reliant is getting a full rework, and being made in Java.</h2>
 
 ----------------------------------------------------------------------------------------------
 
