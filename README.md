@@ -1,6 +1,6 @@
 # Reliant
 
-<h2>Update: Reliant is getting a full rework, and being made in Java.</h2>
+<h2>Update: Reliant is getting a full rework, and being made in Java. (8/22/2020)</h2>
 
 ----------------------------------------------------------------------------------------------
 
