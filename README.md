@@ -21,3 +21,10 @@ Head to releases to get started.
 **- Windows Vista**
 <br>
 **- Windows XP** (*Note: Some features may not work.*)
+
+## Todo
+
+- [x] Remove Launcher
+- [ ] Auto Updater
+- [ ] Make Reliant depend only on itself for resizing, not a launcher
+- [x] Automatically repair Reliant files if they are missing
