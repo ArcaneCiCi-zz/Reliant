@@ -25,6 +25,6 @@ Head to releases to get started.
 ## Todo
 
 - [x] Remove Launcher
-- [ ] Auto Updater
-- [ ] Make Reliant depend only on itself for resizing, not a launcher
+- [x] Auto Updater
+- [x] Make Reliant depend only on itself, not a launcher
 - [x] Automatically repair Reliant files if they are missing
