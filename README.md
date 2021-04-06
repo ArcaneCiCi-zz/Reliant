@@ -21,4 +21,3 @@ Head to releases to get started.
 **- Windows Vista**
 <br>
 **- Windows XP** (*Note: Some features may not work.*)
-----------------------------------------------------------------------------------------------
