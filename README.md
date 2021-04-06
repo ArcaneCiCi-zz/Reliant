@@ -1,7 +1,5 @@
 # Reliant
 
-<h2>Update: Reliant is getting a full rework, and being made in Java. (8/22/2020)</h2>
-
 ----------------------------------------------------------------------------------------------
 
 **A Windows batch file multi-tool that aids you in your experience with a Windows Machine.**
