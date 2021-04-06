@@ -22,5 +22,5 @@ Head to releases to get started.
 <br>
 **- Windows Vista**
 <br>
-**- Windows XP**
+**- Windows XP** Note: Some features may not work.
 ----------------------------------------------------------------------------------------------
