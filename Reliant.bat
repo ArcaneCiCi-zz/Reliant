@@ -38,7 +38,13 @@ if not %updatescommit% == %gitcommit% (
 :updatereliant
 echo [Reliant] Downloading Update...
 powershell -nologo -noprofile -command "Invoke-WebRequest 'https://arcanecici.github.io/Reliant/Reliant.bat' -OutFile '%CD%\Reliant-New.bat'"
+del "assets\settings\changelog.txt"
+powershell -nologo -noprofile -command "Invoke-WebRequest 'https://raw.githubusercontent.com/ArcaneCiCi/Reliant/master/changelog.txt' -OutFile 'assets\settings\changelog.txt'"
 echo [Reliant] Update Downloaded, restarting...
+if exist "assets\settings\update.txt" (
+    break>"assets\settings\update.txt"
+    echo 1 >> "assets\settings\update.txt"
+)
 del "assets\updater\updates.txt"
 rmdir "assets\updater\"
 start cmd /k "Reliant-New.bat"
