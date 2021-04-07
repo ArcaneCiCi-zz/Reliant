@@ -2,7 +2,8 @@
 
 ----------------------------------------------------------------------------------------------
 
-**A Windows batch file multi-tool that aids you in your experience with a Windows Machine. Reliant automatically updates to provide the best experience for the user.**
+**A Windows batch file multi-tool that aids you in your experience with a Windows Machine.** 
+**Reliant automatically updates to provide the best experience for the user.**
 
 *Latest version: Reliant 1.10*
 
