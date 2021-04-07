@@ -1,7 +1,7 @@
 @echo off
 goto startup
 :startup
-set gitcommit=d941cdc
+set gitcommit=34294ae
 set relversion=%gitcommit%/master
 set project=Reliant 1.10
 SETLOCAL EnableDelayedExpansion
