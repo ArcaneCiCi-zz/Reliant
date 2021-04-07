@@ -1,7 +1,7 @@
 @echo off
 goto startup
 :startup
-set gitcommit=34294ae
+set gitcommit=f71f971
 set relversion=%gitcommit%/master
 set project=Reliant 1.10
 SETLOCAL EnableDelayedExpansion
@@ -80,8 +80,7 @@ powershell -nologo -noprofile -command "Invoke-WebRequest 'https://raw.githubuse
 
 echo [Reliant] Changelog Downloaded Successfully.
 echo Reliant was set up successfully!
-pause
-timeout /t 3 /nobreak >nul
+timeout /t 2 /nobreak >nul
 goto welcome
 
 :welcome
