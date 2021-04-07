@@ -21,3 +21,7 @@ Head to releases to get started.
 **- Windows Vista**
 <br>
 **- Windows XP** (*Note: Some features may not work.*)
+
+## Reliant 1.11 Update Todo List
+
+- [ ] Make custom resolutions in the settings menu.
