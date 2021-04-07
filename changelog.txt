@@ -1,1 +1,9 @@
-This is a test.
+Reliant 1.10 (The Return)
+
+- Removed the Launcher
+- Added an Auto Updater, no more manually downloading updates!
+- Made Reliant depend only on itself, when you start it up for the first time, it will generate the default settings files, and download updates.
+- Reliant will automatically repair files that have been removed.
+- Rewrote part of the menu selector code, and fixed coloring bugs in them.
+
+NOTE: Reliant now stores settings in the "settings" folder, if you need to transfer settings over, drag them from the "logs" folder to the "settings" folder.
