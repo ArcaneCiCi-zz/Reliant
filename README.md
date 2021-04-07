@@ -8,7 +8,7 @@
 
 *Latest version: Reliant 1.10*
 
-Click [here](https://github.com/ArcaneCiCi/Reliant/releases/latest) to get started.
+Click [here](https://github.com/ArcaneCiCi/Reliant/releases/latest) to get Reliant.
 
 ***Supported Operating systems***
 
