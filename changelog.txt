@@ -1,3 +1,4 @@
 Reliant 1.11
 
 - Added an option to enable the "Ultimate Power Plan" on Windows.
+- Added a debug option at the top of the script.
