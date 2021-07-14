@@ -6,7 +6,7 @@
 
 **Reliant automatically updates to provide the best experience for the user.**
 
-*Latest version: Reliant 1.10*
+*Latest version: Reliant 1.11*
 
 Click [here](https://github.com/ArcaneCiCi/Reliant/releases/latest) to get Reliant.
 
@@ -24,6 +24,6 @@ Click [here](https://github.com/ArcaneCiCi/Reliant/releases/latest) to get Relia
 <br>
 **- Windows XP** (*Note: Some features may not work.*)
 
-## Reliant 1.11 Update Todo List
+## Reliant 1.12 Update Todo List
 
 - [ ] Make custom resolutions in the settings menu.
