@@ -1,9 +1,14 @@
 @echo off
+set debug="false"
+if %debug% == "true" (
+    @echo on
+)
+
 goto startup
 :startup
-set gitcommit=f71f971
+set gitcommit=e3f6ed3
 set relversion=%gitcommit%/master
-set project=Reliant 1.10
+set project=Reliant 1.11
 SETLOCAL EnableDelayedExpansion
 for /F "tokens=1,2 delims=#" %%a in ('"prompt #$H#$E# & echo on & for %%b in (1) do rem"') do (
 set "DEL=%%a"
@@ -90,7 +95,7 @@ set prevmenu=welcome
 color %basecolor%
 cls
 set /p changelogupdate=<"assets\settings\update.txt"
-if %changelogupdate%==0 ( 
+if %changelogupdate%==0 (
     goto menubook
 ) else if %changelogupdate%==1 (
     goto changelogs
@@ -283,6 +288,7 @@ echo 23. Reliant FTP Mode
 echo 24. Reliant SSH Mode
 echo 25. Build a Maven project
 echo 26. Event Creator
+echo 27. Enable Ultimate Power Plan (Run Reliant as Administrator)
 call :TextColor %basecolor2% "__________________________________________________________________"
 echo.
 echo.
@@ -314,6 +320,8 @@ if %input%==menubook (
     goto 25
 ) else if %input%==26 (
     goto 26
+) else if %input%==27 (
+    goto 27
 ) else (
     goto failed
 )
@@ -325,7 +333,7 @@ start https://github.com/ArcaneCiCi/Reliant
 
 :1
 set prevmenu=1
-title %project% (%relversion%) 
+title %project% (%relversion%)
 cls
 systeminfo
 pause
@@ -335,7 +343,7 @@ goto mainmenu
 set prevmenu=2
 color %basecolor%
 cls
-title %project% (%relversion%) 
+title %project% (%relversion%)
 echo.
 netstat -a
 timeout /t 5 /nobreak >nul
@@ -352,7 +360,7 @@ goto mainmenu
 :3
 set prevmenu=3
 cls
-title %project% (%relversion%) 
+title %project% (%relversion%)
 color %basecolor%
 echo.
 echo.
@@ -370,7 +378,7 @@ cls
 
 :4
 set prevmenu=4
-title %project% (%relversion%) 
+title %project% (%relversion%)
 cls
 color %basecolor%
 echo.
@@ -407,7 +415,7 @@ goto devmode
 :6
 cls
 color %basecolor%
-title Reliant ad66d04 
+
 echo.
 echo ============================
 echo Generated Number: %random%
@@ -419,7 +427,7 @@ goto mainmenu
 
 :7
 cls
-title Reliant ad66d04 
+
 echo Enter Computer name you want to message
 set /p "MsgName="
 if %MsgName%=='' goto 7_2
@@ -439,18 +447,17 @@ goto mainmenu
 
 :8
 cls
-title Reliant ad66d04 
+
 echo.
 echo To reverse this, run tool "21".
 timeout /t 5 >nul
 ipconfig /release >nul
-if ERRORLEVEL1 ipconfig /release all >nul
+ipconfig /release all >nul
 timeout /t 3 >nul
 goto mainmenu
 
 :9
 cls
-title Reliant ad66d04 
 echo.
 echo Enter the file path you want to generate files to.
 set /p "filespaminput=>"
@@ -487,7 +494,6 @@ goto mainmenu
 
 :10
 cls
-title Reliant ad66d04 
 echo Enter the IP you would like to run "tracert" on.
 set /p "tracertinput=>"
 tracert -d %tracertinput%
@@ -513,7 +519,7 @@ goto startup
 
 :12
 cls
-title Reliant ad66d04 
+
 echo ---------------------------
 echo Reliant Calculator
 echo.
@@ -533,7 +539,7 @@ goto 12
 
 :14
 cls
-title Reliant ad66d04 
+
 color %basecolor%
 echo.
 echo Enter the domain name you would like to view.
@@ -546,13 +552,13 @@ goto mainmenu
 
 :15
 cls
-title Reliant ad66d04 
+
 set /p "treeinput=File Path:"
 tree %treeinput%
-pause >nul
+pause
 echo Process:%input% Done!
 echo Returning to main menu.
-timeout /t 5 /nobreak >nul
+timeout /t 3 /nobreak >nul
 goto mainmenu
 
 :reloadreliant
@@ -590,7 +596,7 @@ goto mainmenu
 :19
 cls
 set prevmenu=19
-title Reliant Cryptographic Signing Tool. 
+title Reliant Cryptographic Signing Tool.
 echo Make sure your file is on your desktop.
 cd %USERPROFILE%\desktop
 echo Enter the file name of which you want to sign.
@@ -621,7 +627,7 @@ goto mainmenu2
 :16
 cls
 setlocal ENABLEEXTENSIONS ENABLEDELAYEDEXPANSION
-title Reliant Encryption v%relversion% 
+title Reliant Encryption v%relversion%
 color %basecolor%
 set savefile=on
 
@@ -669,7 +675,7 @@ goto mainmenu
 :17
 cls
 setlocal ENABLEEXTENSIONS ENABLEDELAYEDEXPANSION
-title Reliant Decryption v%relversion% 
+title Reliant Decryption v%relversion%
 color %basecolor%
 set savefile=on
 (set CHAR[UDFM45]=a) & (set CHAR[H20DGF]=b) & (set CHAR[FDH56D]=c) & (set CHAR[FGS546]=d) & (set CHAR[JUK4JH]=e)
@@ -740,7 +746,14 @@ cls
 echo.
 echo What color would you like to change the text to?
 echo.
-type "assets\settings\colors.txt"
+echo 0 = Black       8 = Gray
+echo 1 = Blue        9 = Light Blue
+echo 2 = Green       A = Light Green
+echo 3 = Aqua        B = Light Aqua
+echo 4 = Red         C = Light Red
+echo 5 = Purple      D = Light Purple
+echo 6 = Yellow      E = Light Yellow
+echo 7 = White       F = Bright White
 echo.
 echo.
 echo Enter a color.
@@ -760,7 +773,14 @@ cls
 echo.
 echo What color would you like to change the barriers to?
 echo.
-type "assets\settings\colors.txt"
+echo 0 = Black       8 = Gray
+echo 1 = Blue        9 = Light Blue
+echo 2 = Green       A = Light Green
+echo 3 = Aqua        B = Light Aqua
+echo 4 = Red         C = Light Red
+echo 5 = Purple      D = Light Purple
+echo 6 = Yellow      E = Light Yellow
+echo 7 = White       F = Bright White
 echo.
 echo.
 echo Enter a color.
@@ -787,7 +807,7 @@ goto mainmenu
 
 :22
 cls
-title Reliant ad66d04 
+
 color %basecolor%
 echo.
 echo ----------------------------------------------------------------
@@ -855,6 +875,7 @@ echo.
 echo Entering SSH Mode, Purely runs SSH commands.
 SSH
 goto 24_2
+
 :24_2
 set /p "sshinput=> "
 SSH %sshinput%
@@ -863,7 +884,6 @@ goto 24_2
 
 :25
 cls
-title Reliant ad66d04 
 echo.
 echo Enter the file path of the project.
 set /p "mavenbuildinput=>"
@@ -871,7 +891,7 @@ cd %mavenbuildinput%
 title Building Project...
 mvn clean install
 cls
-title Reliant ad66d04 
+
 echo.
 echo If the project was not built correctly, there might be an issue in your code or pom.xml.
 echo We do not accept support for issues in your project.
@@ -882,7 +902,7 @@ goto mainmenu2
 
 :20
 cls
-title Reliant ad66d04 
+
 echo.
 color f
 echo Here you can run any java command via the command prompt.
@@ -902,7 +922,7 @@ goto javatop
 
 :13
 cls
-title Reliant ad66d04 
+
 echo.
 echo What would you like to do?
 echo.
@@ -957,12 +977,26 @@ cls
 echo.
 eventcreate /?
 echo.
-echo.
-:26top
 echo Type an event creation command.
 set /p "eventcreateinput=> "
 eventcreate %eventcreateinput%
 goto mainmenu
+
+:27
+cls
+echo.
+echo Are you sure you want to enable the Ultimate Power Plan on Windows? (Yes/No)
+set /p "powerplaninput=> "
+if powerplaninput == "Yes" (
+    powercfg -duplicatescheme e9a42b02-d5df-448d-aa00-03f14749eb61
+    echo Press any key to return to the main menu.
+    pause >nul
+    goto mainmenu2
+) else (
+    echo Returning to the main menu...
+    timeout /t 3 /nobreak >nul
+    goto mainmenu2
+)
 
 :failed
 cls
@@ -973,14 +1007,19 @@ echo Press any key to return to the menubook.
 pause >nul
 goto menubook
 
-
-
 :reliantsettings_2
 cls
 echo.
 echo What color would you like to change the text to?
 echo.
-type "assets\settings\colors.txt"
+echo "0 = Black       8 = Gray"
+echo "1 = Blue        9 = Light Blue"
+echo "2 = Green       A = Light Green"
+echo "3 = Aqua        B = Light Aqua"
+echo "4 = Red         C = Light Red"
+echo "5 = Purple      D = Light Purple"
+echo "6 = Yellow      E = Light Yellow"
+echo "7 = White       F = Bright White"
 echo.
 echo.
 echo Enter a color.
@@ -1000,7 +1039,14 @@ cls
 echo.
 echo What color would you like to change the barriers to?
 echo.
-type "assets\settings\colors.txt"
+echo "0 = Black       8 = Gray"
+echo "1 = Blue        9 = Light Blue"
+echo "2 = Green       A = Light Green"
+echo "3 = Aqua        B = Light Aqua"
+echo "4 = Red         C = Light Red"
+echo "5 = Purple      D = Light Purple"
+echo "6 = Yellow      E = Light Yellow"
+echo "7 = White       F = Bright White"
 echo.
 echo.
 echo Enter a color.
@@ -1027,7 +1073,6 @@ timeout /t 3 /nobreak >nul
 exit
 
 :TextColor
-echo off
 <nul set /p ".=%DEL%" > "%~2"
 findstr /v /a:%1 /R "^$" "%~2" nul
 del "%~2" > nul 2>&1
