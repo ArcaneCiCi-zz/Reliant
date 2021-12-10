@@ -29,3 +29,4 @@ While these are supported systems, it is recommended to use Windows 11 and 10, a
 - Make custom resolutions in the settings menu.
 - Revamp all major main menu's and deprecate the use of the Menu Book, and convert them all into one central menu.
 - Make features externally added, rather than hard set in the main script. (This will mean you can choose which features are in the main script)
+- A Linux Version.
